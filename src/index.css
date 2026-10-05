@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+@theme {
+  --color-paper: #FAF8F4;
+  --color-ink: #1A1A1F;
+  --color-muted: #55555C;
+  --color-line: #DDD9D0;
+
+  --color-accent: #0F766E;
+  --color-accent-strong: #0B4F4A;
+  --color-accent-soft: #CCEFEA;
+
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-paper text-ink font-sans;
+  }
+}
