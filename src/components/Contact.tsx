@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <section id="contact" className="mx-auto max-w-3xl border-t border-line px-6 pt-16 pb-24">
+    <section id="contact" className="mx-auto max-w-3xl border-t border-line px-6 pt-16 pb-24 scroll-mt-13">
       <h2 className="text-sm font-medium uppercase tracking-widest text-accent">Contact</h2>
       <p className="mt-6 text-lg leading-relaxed">
         The fastest way to reach me is by email. I'm based in the Waterloo and Kitchener area and open to roles across KW and the GTA.

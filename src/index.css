@@ -15,6 +15,9 @@
 }
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+}
   body {
     @apply bg-paper text-ink font-sans;
   }
