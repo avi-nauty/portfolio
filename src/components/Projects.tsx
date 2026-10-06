@@ -2,7 +2,7 @@ import { projects } from "../projects"
 
 function Projects() {
   return (
-    <section id="projects" className="mx-auto max-w-3xl border-t border-line px-6 py-16 scroll-mt-13">
+    <section id="projects" className="mx-auto max-w-2xl border-t border-line px-6 py-16 scroll-mt-13">
       <h2 className="text-sm font-medium uppercase tracking-widest text-accent">Projects</h2>
       <div className="mt-6 space-y-6">
         {projects.map((project) => (

@@ -12,6 +12,7 @@
 
   --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
+  --font-serif: 'Newsreader Variable', serif;
 }
 
 @layer base {
