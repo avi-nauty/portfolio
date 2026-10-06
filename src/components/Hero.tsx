@@ -6,7 +6,7 @@ const buttonClass =
 function Hero() {
   return (
     <section className="mx-auto max-w-2xl px-6 pt-24 pb-16">
-      <h1 className="text-4xl font-semibold tracking-tight md:text-6xl">Aviral Nautiyal</h1>
+      <h1 className="font-serif text-4xl font-semibold tracking-tight md:text-6xl">Aviral Nautiyal</h1>
       <p className="mt-4 text-lg text-muted md:text-xl">
         ML engineer in Waterloo with a background in medical imaging and deep learning.
       </p>
