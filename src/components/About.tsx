@@ -1,6 +1,7 @@
 function About() {
   return (
-    <section id="about" className="mx-auto max-w-2xl border-t border-line px-6 py-16 scroll-mt-13">
+    <section id="about" className="mx-auto max-w-2xl px-6">
+        <div className="border-t border-line py-16">
       <h2 className="text-sm font-medium uppercase tracking-widest text-accent">About</h2>
       <div className="mt-6 space-y-5 text-lg leading-relaxed">
         <p>
@@ -12,6 +13,7 @@ function About() {
         <p>
            I'm based in the Waterloo and Kitchener area and open to roles across the KW and GTA region. The fastest way to reach me is by email, and you can find my code on GitHub and my background on LinkedIn.
         </p>
+      </div>
       </div>
     </section>
   )
