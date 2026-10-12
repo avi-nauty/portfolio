@@ -6,7 +6,14 @@ const buttonClass =
 function Hero() {
   return (
     <section className="mx-auto max-w-2xl px-6 pt-24 pb-16">
+        <div className="flex items-center justify-between gap-5">
       <h1 className="font-serif text-4xl font-semibold tracking-tight md:text-6xl">Aviral Nautiyal</h1>
+      <img
+        src="Firefly.png"
+        alt="Sketch portrait of Aviral Nautiyal"
+        className="h-16 w-16 shrink-0 object-contain md:h-50 md:w-50"
+        />
+      </div>
       <p className="mt-4 text-lg text-muted md:text-xl">
         ML engineer in Waterloo with a background in medical imaging and deep learning.
       </p>

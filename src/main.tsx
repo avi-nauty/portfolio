@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.tsx'
 import "@fontsource-variable/inter";
 import "@fontsource-variable/jetbrains-mono";
+import '@fontsource-variable/newsreader'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
