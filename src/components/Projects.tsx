@@ -17,15 +17,20 @@ function Projects() {
                 </li>
               ))}
             </ul>
-            {project.link && (
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-4 inline-block text-accent underline-offset-4 hover:text-accent-strong hover:underline"
-              >
-                View project
-              </a>
+            {project.links && (
+              <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
+                {project.links.map((link) => (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-accent underline-offset-4 hover:text-accent-strong hover:underline"
+                  >
+                    {link.label}
+                  </a>
+                ))}
+              </div>
             )}
           </article>
         ))}
