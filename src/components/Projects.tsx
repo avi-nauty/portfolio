@@ -1,5 +1,8 @@
 import { FiGithub, FiPlayCircle } from "react-icons/fi"
 import { projects } from "../projects"
+import { lazy, Suspense } from "react"
+
+const PipelineScene = lazy(() => import("./PipelineScene"))
 
 const linkIcons = {
   github: FiGithub,
@@ -47,6 +50,13 @@ function Projects() {
                       </a>
                     )
                   })}
+                </div>
+              )}
+              {project.visual === "pipeline" && (
+                <div className="mt-4">
+                  <Suspense fallback={<div className="h-[480px] rounded-xl border border-line" />}>
+                    <PipelineScene />
+                  </Suspense>
                 </div>
               )}
             </article>

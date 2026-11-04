@@ -10,6 +10,7 @@ export type Project = {
   highlights?: string[]
   tags: string[]
   links?: ProjectLink[]
+  visual?: "pipeline"
 }
 
 export const projects: Project[] = [
@@ -26,6 +27,7 @@ export const projects: Project[] = [
       "Try the live demo by uploading an MRI image (PNG or JPG, up to 10 MB). It's a research demo, not for diagnosis, and the first load can take about 30 seconds while the container starts.",
     ],
     tags: ["Deep Learning", "CNN", "Medical Imaging", "TensorFlow", "Docker", "Cloud Run", "GitHub Actions"],
+    visual: "pipeline",
     links: [
       {
         label: "Live demo",
