@@ -34,7 +34,7 @@ const STAGES: Stage[] = [
   { id: 'bho', title: 'BHO feature mask', pos: [4.2, 0, 0], size: [0.8, h(1909), 0.8], ghostH: h(3840), color: '#0d9488',
     detail: 'Black Hole Optimization chose which features to keep by minimizing redundancy while maximizing correlation with the label. 1909 of 3840 are kept (50.28% reduction on BRISC 2025). At inference the saved mask just selects columns.' },
   { id: 'clf', title: 'Opt-SGD logistic regression', pos: [6.8, 0, 0], size: [1, 1.6, 1], color: '#115e59',
-    detail: 'p = sigmoid(x·w + b). Trained with learning rate 0.001, L2 10⁻³, up to 20 inner stochastic updates per epoch, 150 epochs, seed 42.' },
+    detail: "Takes the 1909 selected features and computes p = sigmoid(w·x + b), the probability of a tumor. The weights were learned with opt-SGD, which corrects each stochastic update against a full-gradient reference to reduce variance. Learning rate 0.001, L2 10⁻³, 150 epochs."},
   { id: 'gate', title: 'Threshold 0.30', pos: [9, 0, 0], size: [0.3, 2.2, 1.2], color: '#b45309',
     detail: 'If p ≥ 0.30 the image is flagged as tumor. The cutoff is below the usual 0.50 to favour recall, since a missed tumor costs more than a false alarm.' },
 ]
