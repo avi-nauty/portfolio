@@ -3,6 +3,7 @@ import { projects } from "../projects"
 import { lazy, Suspense } from "react"
 
 const PipelineScene = lazy(() => import("./PipelineScene"))
+const ApiFlowScene = lazy(() => import("./ApiFlowScene"))
 
 const linkIcons = {
   github: FiGithub,
@@ -59,6 +60,13 @@ function Projects() {
                   </Suspense>
                 </div>
               )}
+              {project.visual === "api" && (
+                <div className="mt-4">
+                  <Suspense fallback={<div className="h-[480px] rounded-xl border border-line" />}>
+                    <ApiFlowScene />
+                  </Suspense>
+                </div>
+            )}
             </article>
           ))}
         </div>
