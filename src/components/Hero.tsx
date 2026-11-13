@@ -45,7 +45,7 @@ function Hero() {
           LinkedIn
         </a>
         <a
-          href="Aviral_Nautiyal_Resume_draft6.pdf"
+          href="Aviral_Nautiyal_Resume_draft7.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className={buttonClass}
