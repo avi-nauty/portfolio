@@ -4,6 +4,8 @@ Source code for my personal portfolio site.
 
 **Live site:** https://aviral-portfolio-ccd0e.web.app
 
+_Last updated: November 2026_
+
 ## About me
 
 I'm an ML engineer based in Waterloo, Ontario, with an MSc in Computer Science from Lakehead University. My graduate research focused on medical imaging, convolutional neural networks and metaheuristic optimization. I'm looking for junior machine learning, data engineering and software engineering roles in the Kitchener-Waterloo and Greater Toronto area.
